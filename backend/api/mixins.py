@@ -19,3 +19,5 @@ class UserQuerySetMixin():
         if self.allow_staff_view and user.is_staff:
             return qs
         return qs.filter(**lookup_data)
+
+
