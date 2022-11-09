@@ -1,2 +1,0 @@
-USER = 'ProductApi'
-PASSWORD = 'admin'
