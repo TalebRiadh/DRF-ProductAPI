@@ -69,6 +69,7 @@ class ProductUpdateAPIView(
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = 'pk'
+    
     def perform_update(self, serializer):
         instance = serializer.save()
         if not instance.content:
